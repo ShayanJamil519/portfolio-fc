@@ -1,0 +1,364 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+main {
+  width: 100%;
+}
+
+.hero__section {
+  padding: 10vmin 20vmin;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f4f1e8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__section .logo {
+  width: 70px;
+  height: 70px;
+  display: inline-block;
+}
+
+.hero__section .logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.hero__section h1 {
+  font-size: 17vmin;
+  font-weight: 500;
+  color: #9b4819;
+  text-align: center;
+  margin: 0vmin 0 8vmin 0;
+  line-height: 25vmin;
+  position: relative;
+}
+
+.hero__section h1 span {
+  color: #191919;
+}
+
+.hero__section h1 span:first-child {
+  font-style: italic;
+}
+
+.hero__section p {
+  color: #191919;
+  font-size: 5vmin;
+  width: 60%;
+  text-align: center;
+}
+
+.hero__section > svg {
+  width: 102vmin !important;
+  position: absolute;
+  top: 23%;
+  left: 33%;
+}
+
+.hero__section path {
+  stroke-width: 8;
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 0;
+  animation: draw 3s linear infinite;
+  animation-delay: 2s;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 2000;
+  }
+}
+
+.hero__section .hireme {
+  margin-top: 10vmin;
+  position: relative;
+}
+
+.hero__section .hireme a {
+  color: #9b4819;
+  letter-spacing: 1px;
+  font-style: italic;
+  font-size: 4vmin;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.hero__section .hireme > svg {
+  position: absolute;
+  top: -86%;
+  left: -44%;
+  width: 25vmin !important;
+  height: 20vmin !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* About Section */
+
+.about__section {
+  padding: 15vmin 20vmin;
+  width: 100%;
+  background-color: #f4f1e8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20vmin;
+}
+
+.about__section .about__content {
+  flex: 0.6;
+  position: relative;
+}
+
+.about__section .about__content h1 {
+  font-size: 10vmin;
+  font-weight: 100;
+  color: #9b4819;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+.about__section .about__content img {
+  position: absolute;
+  width: 200px;
+  top: -3%;
+  left: -3%;
+}
+
+.about__section .about__content p {
+  margin-top: 7vmin;
+  color: #191919;
+  font-size: 4vmin;
+  text-align: justify;
+  line-height: 5.5vmin;
+  word-spacing: 0.5vmin;
+}
+
+.about__section .about__img__container {
+  flex: 0.4;
+}
+.about__section .about__img__container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8%;
+}
+
+/* Experience Section */
+
+.experience__section {
+  padding: 15vmin 20vmin;
+  width: 100%;
+  background-color: #f4f1e8;
+  text-align: center;
+}
+
+.experience__section .experience__container {
+  display: flex;
+  gap: 15vmin;
+  justify-content: center;
+  align-items: center;
+}
+
+.experience__section > h1 {
+  font-size: 10vmin;
+  font-weight: 100;
+  color: #9b4819;
+  margin-bottom: 12vmin;
+}
+
+.experience__section h1 span {
+  color: black;
+}
+
+.experience__section .experience__container .experience {
+  flex: 0.33;
+}
+
+.experience__section .experience__container .experience > h1 {
+  margin: 5vmin 0 4vmin 0;
+  font-weight: 100;
+  font-size: 4.5vmin;
+}
+
+.experience__section .experience__container .experience > hr {
+  margin-bottom: 4vmin;
+  height: 2px;
+  background-color: #9e5125;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+
+.experience__section .experience__container .experience p {
+  font-size: 19px;
+  font-weight: 100;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+
+/* Projects Section */
+
+.projects__section {
+  padding: 15vmin 15vmin;
+  width: 100%;
+  background-color: #f4f1e8;
+  text-align: center;
+}
+
+.projects__section .content {
+  position: relative;
+  margin-bottom: 12vmin;
+}
+
+.projects__section .content > h1 {
+  font-size: 10vmin;
+  font-weight: 100;
+  color: #9b4819;
+  margin-bottom: 0;
+}
+
+.projects__section .content h1 span {
+  color: black;
+}
+
+.projects__section .content > img {
+  width: 100px;
+  position: absolute;
+  top: 53%;
+}
+
+.projects__section .content > p {
+  margin-top: 3vmin;
+  color: #191919;
+  font-size: 3.5vmin;
+}
+
+.projects__section .projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7vmin;
+}
+.projects__section .projects img {
+  width: 390px;
+  height: 470px;
+}
+
+/* <!-- Footer Section --> */
+
+.footer__section {
+  padding: 15vmin 15vmin 25vmin 15vmin;
+  width: 100%;
+  background-color: #9b4819;
+  color: white;
+  display: flex;
+  gap: 10vmin;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__section .left__container {
+  flex: 0.65;
+}
+
+.footer__section .heading__container {
+  position: relative;
+}
+
+.footer__section .heading__container > h1 {
+  font-size: 10vmin;
+  font-weight: 100;
+  line-height: 12vmin;
+  margin-bottom: 7vmin;
+}
+
+.footer__section .heading__container img {
+  position: absolute;
+  width: 270px;
+  bottom: -7%;
+  right: 29%;
+}
+
+.footer__section .left__container hr {
+  background-color: #bd8f53;
+  border: none;
+  width: 80%;
+  outline: none;
+  border-radius: 10px;
+  height: 2px;
+  margin-bottom: 2vmin;
+}
+.footer__section .left__container p {
+  font-size: 3vmin;
+  letter-spacing: 0.5px;
+  word-spacing: 5px;
+  line-height: 4vmin;
+  margin-bottom: 3vmin;
+}
+
+.footer__section .left__container .socials {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.footer__section .left__container .socials a {
+  margin-right: 10px;
+}
+
+.footer__section .left__container .socials a img {
+  width: 35px;
+  height: 35px;
+}
+
+.footer__section .left__container .socials p {
+  font-style: italic;
+  margin: 0;
+  font-size: 25px;
+  margin-left: 15px;
+}
+
+.footer__section .right__container {
+  flex: 0.35;
+}
+
+.footer__section .right__container div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3vmin;
+  margin-bottom: 5vmin;
+}
+
+.footer__section .right__container div img {
+  width: 57px;
+  height: 57px;
+}
+
+.footer__section .right__container div h1 span {
+  font-weight: 100;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.footer__section .right__container div h1 a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+}
