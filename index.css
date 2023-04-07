@@ -469,6 +469,18 @@ main {
     flex-direction: column;
     gap: 4vmin;
   }
+
+  .footer__section .heading__container > h1 {
+    font-size: 8.5vmin;
+    line-height: 12vmin;
+  }
+
+  .footer__section .heading__container img {
+    width: 140px;
+    bottom: -4%;
+    right: 14%;
+  }
+
   .footer__section .left__container .socials p {
     font-size: 23px;
     margin-left: unset;
