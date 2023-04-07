@@ -100,18 +100,13 @@ main {
   cursor: pointer;
 }
 
-.hero__section .hireme > svg {
+.hero__section .hireme > img {
   position: absolute;
-  top: -86%;
-  left: -44%;
-  width: 25vmin !important;
-  height: 20vmin !important;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  object-fit: contain;
+  top: 93%;
+  left: 0%;
+  width: 95%;
 }
-
 /* About Section */
 
 .about__section {
